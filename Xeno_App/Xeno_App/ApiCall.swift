@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct Champion : Decodable{
     let id = UUID()
@@ -13,7 +14,10 @@ struct Champion : Decodable{
     var price : Int
     
     
+    
 }
+
+
 
 class Api : ObservableObject{
     @Published var champs = [Champion]()
