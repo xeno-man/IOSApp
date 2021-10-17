@@ -9,13 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("test")
-            .padding()
+        VStack{
+            Text("tesr")
+            TextField
+        }
+            
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+        ContentView()
+            .preferredColorScheme(.dark)
     }
 }
