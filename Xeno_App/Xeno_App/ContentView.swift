@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    var champs = [Champion]()
     var body: some View {
+        
         VStack{
+            
             Text("tesr")
-            TextField
         }
             
     }

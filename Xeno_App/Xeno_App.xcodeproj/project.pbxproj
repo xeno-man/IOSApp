@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A2502E0C271CD5A2003B545C /* ApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2502E0B271CD5A2003B545C /* ApiCall.swift */; };
+		A2502E0E271CD5E5003B545C /* ChampionDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2502E0D271CD5E5003B545C /* ChampionDetail.swift */; };
 		A2B5650727035CFE00124ED9 /* Xeno_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B5650627035CFE00124ED9 /* Xeno_AppApp.swift */; };
 		A2B5650927035CFE00124ED9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B5650827035CFE00124ED9 /* ContentView.swift */; };
 		A2B5650B27035CFF00124ED9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2B5650A27035CFF00124ED9 /* Assets.xcassets */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A2502E0B271CD5A2003B545C /* ApiCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCall.swift; sourceTree = "<group>"; };
+		A2502E0D271CD5E5003B545C /* ChampionDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionDetail.swift; sourceTree = "<group>"; };
 		A2B5650327035CFE00124ED9 /* Xeno_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Xeno_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2B5650627035CFE00124ED9 /* Xeno_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Xeno_AppApp.swift; sourceTree = "<group>"; };
 		A2B5650827035CFE00124ED9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +100,8 @@
 			children = (
 				A2B5650627035CFE00124ED9 /* Xeno_AppApp.swift */,
 				A2B5650827035CFE00124ED9 /* ContentView.swift */,
+				A2502E0D271CD5E5003B545C /* ChampionDetail.swift */,
+				A2502E0B271CD5A2003B545C /* ApiCall.swift */,
 				A2B5650A27035CFF00124ED9 /* Assets.xcassets */,
 				A2B5650C27035CFF00124ED9 /* Preview Content */,
 			);
@@ -258,6 +264,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2B5650927035CFE00124ED9 /* ContentView.swift in Sources */,
+				A2502E0E271CD5E5003B545C /* ChampionDetail.swift in Sources */,
+				A2502E0C271CD5A2003B545C /* ApiCall.swift in Sources */,
 				A2B5650727035CFE00124ED9 /* Xeno_AppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
