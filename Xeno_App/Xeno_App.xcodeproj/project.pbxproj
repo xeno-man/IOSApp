@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A2502E0C271CD5A2003B545C /* ApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2502E0B271CD5A2003B545C /* ApiCall.swift */; };
 		A2502E0E271CD5E5003B545C /* ChampionDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2502E0D271CD5E5003B545C /* ChampionDetail.swift */; };
+		A2A3B2D42724C233005D4F4A /* ChampionNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A3B2D32724C233005D4F4A /* ChampionNavView.swift */; };
 		A2B5650727035CFE00124ED9 /* Xeno_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B5650627035CFE00124ED9 /* Xeno_AppApp.swift */; };
 		A2B5650927035CFE00124ED9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B5650827035CFE00124ED9 /* ContentView.swift */; };
 		A2B5650B27035CFF00124ED9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2B5650A27035CFF00124ED9 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 		A2B5651827035CFF00124ED9 /* Xeno_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B5651727035CFF00124ED9 /* Xeno_AppTests.swift */; };
 		A2B5652227035CFF00124ED9 /* Xeno_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B5652127035CFF00124ED9 /* Xeno_AppUITests.swift */; };
 		A2B5652427035CFF00124ED9 /* Xeno_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B5652327035CFF00124ED9 /* Xeno_AppUITestsLaunchTests.swift */; };
+		A2BB1F592729535900A7ABAE /* gameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BB1F582729535900A7ABAE /* gameView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,7 @@
 /* Begin PBXFileReference section */
 		A2502E0B271CD5A2003B545C /* ApiCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCall.swift; sourceTree = "<group>"; };
 		A2502E0D271CD5E5003B545C /* ChampionDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionDetail.swift; sourceTree = "<group>"; };
+		A2A3B2D32724C233005D4F4A /* ChampionNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionNavView.swift; sourceTree = "<group>"; };
 		A2B5650327035CFE00124ED9 /* Xeno_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Xeno_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2B5650627035CFE00124ED9 /* Xeno_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Xeno_AppApp.swift; sourceTree = "<group>"; };
 		A2B5650827035CFE00124ED9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,6 +51,7 @@
 		A2B5651D27035CFF00124ED9 /* Xeno_AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Xeno_AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2B5652127035CFF00124ED9 /* Xeno_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Xeno_AppUITests.swift; sourceTree = "<group>"; };
 		A2B5652327035CFF00124ED9 /* Xeno_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Xeno_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A2BB1F582729535900A7ABAE /* gameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +102,10 @@
 		A2B5650527035CFE00124ED9 /* Xeno_App */ = {
 			isa = PBXGroup;
 			children = (
+				A2A3B2D32724C233005D4F4A /* ChampionNavView.swift */,
 				A2B5650627035CFE00124ED9 /* Xeno_AppApp.swift */,
 				A2B5650827035CFE00124ED9 /* ContentView.swift */,
+				A2BB1F582729535900A7ABAE /* gameView.swift */,
 				A2502E0D271CD5E5003B545C /* ChampionDetail.swift */,
 				A2502E0B271CD5A2003B545C /* ApiCall.swift */,
 				A2B5650A27035CFF00124ED9 /* Assets.xcassets */,
@@ -263,7 +269,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2BB1F592729535900A7ABAE /* gameView.swift in Sources */,
 				A2B5650927035CFE00124ED9 /* ContentView.swift in Sources */,
+				A2A3B2D42724C233005D4F4A /* ChampionNavView.swift in Sources */,
 				A2502E0E271CD5E5003B545C /* ChampionDetail.swift in Sources */,
 				A2502E0C271CD5A2003B545C /* ApiCall.swift in Sources */,
 				A2B5650727035CFE00124ED9 /* Xeno_AppApp.swift in Sources */,

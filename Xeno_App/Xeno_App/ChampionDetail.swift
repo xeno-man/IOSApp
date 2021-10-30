@@ -16,7 +16,7 @@ struct ChampionDetail: View {
             Spacer()
             Text(champ.price.description)
             if #available(iOS 15.0, *) {
-                AsyncImage(url: URL(string: "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/\(champ.name)_0.jpg"))
+                AsyncImage(url: URL(string: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/\(champ.name)_0.jpg")).fixedSize()
             } else {
                 // Fallback on earlier versions
                 
@@ -33,7 +33,7 @@ struct ChampionDetail_Previews:
     PreviewProvider {
     
     static var previews: some View {
-        var champ = Champion(name: "Aatrox", price: 100)
+        var champ = Champion(id : 1,name: "Aatrox", price: 100)
         ChampionDetail(champ: champ)
     }
 }
