@@ -8,16 +8,7 @@
 import Foundation
 import UIKit
 
-struct Champion : Decodable , Identifiable{
-    let Id = UUID()
-    var id : Int
-    var name : String
-    var price : Int
-    
-    
-    
-    
-}
+
 
 
 

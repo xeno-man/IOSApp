@@ -8,13 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
-    var champ : Champion
+    @ObservedObject var Game : GameViewModel
+  
+    
+    
+    
+    init(model : GameViewModel) {
+        self.Game = model
+    }
+    	
     var body: some View {
-        var shape = RoundedRectangle(cornerRadius: 20).fill().foregroundColor(.white)
        
+        
             
             NavigationView{
-               // NavigationLink(destination: ChampionDetail(champ: champ)){ Text("test")
+               
                 ZStack{
                     if #available(iOS 15.0, *) {
                         LinearGradient(gradient: Gradient(colors: [.pink,.yellow,.brown]), startPoint: .top, endPoint:.bottom).ignoresSafeArea()
@@ -23,21 +31,17 @@ struct ContentView: View {
                     }
                 VStack{
                     Text("Welcome to my game").font(.title)
-                NavigationLink(destination: ChampionNavView(champs: champ) ){
+                    /*NavigationLink(destination: ChampionNavView(champs: Game.model.AllChamps) ){
                     Text("Check out all the Champions")
                         .padding()
                         .foregroundColor(.black)
                         .font(.title)
                         .background(Color.red)
                         .cornerRadius(50)
-                }.padding()
+                }.padding()*/
                 
-                NavigationLink(destination: {} ){
-                    Button(action:{}){
-                        ZStack{
-                           
-                            
-                            Text("Play the game")
+                    NavigationLink(destination: {gameView(game: .init())} ){
+                    Text("Play the game")
                                 .padding()
                                 .foregroundColor(.black)
                                 .font(.title)
@@ -48,17 +52,19 @@ struct ContentView: View {
                         }
                       
                         
-                    }
-                }.padding()
+                    }.navigationTitle("League Guesser")
+                        .navigationViewStyle(.automatic)
+                                                                       
+                }
                 }
                 }
             }
         
-        }
+        
         
         
             
-    }
+    
 
 
 struct ContentView_Previews: PreviewProvider {
@@ -66,8 +72,7 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         
         
-        return ContentView(
-            champ: Champion(id: 1, name: "Aatrox", price: 6300))
+        return ContentView(model: GameViewModel())
         
     }
 }

@@ -13,10 +13,12 @@ namespace IOSAPI.Data
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
+           int Price1 = 6300;
             base.OnModelCreating(builder);
 
             builder.Entity<Champion>().HasData(
-                new Champion { Id = 1,Name ="test" , Price=100}
+                new Champion { Id = 1,Name ="Aatrox" , Price=Price1},
+                new Champion { Id = 2, Name= "Ahri", Price = Price1}
                 );
 
             
