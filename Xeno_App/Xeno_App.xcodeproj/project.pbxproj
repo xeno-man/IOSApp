@@ -10,6 +10,9 @@
 		A2502E0C271CD5A2003B545C /* ApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2502E0B271CD5A2003B545C /* ApiCall.swift */; };
 		A2502E0E271CD5E5003B545C /* ChampionDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2502E0D271CD5E5003B545C /* ChampionDetail.swift */; };
 		A2A3B2D42724C233005D4F4A /* ChampionNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A3B2D32724C233005D4F4A /* ChampionNavView.swift */; };
+		A2A44D4E2783BF3F009B3602 /* LeagueAPI.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A44D4D2783BF3F009B3602 /* LeagueAPI.xcframework */; };
+		A2A44D4F2783BF3F009B3602 /* LeagueAPI.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A2A44D4D2783BF3F009B3602 /* LeagueAPI.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A2AD10D2277E639F00B6DDF7 /* Sharing manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AD10D1277E639F00B6DDF7 /* Sharing manager.swift */; };
 		A2AD1CFF27388E3400A43690 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AD1CFE27388E3400A43690 /* GameModel.swift */; };
 		A2AD1D012738909400A43690 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AD1D002738909400A43690 /* GameViewModel.swift */; };
 		A2B5650727035CFE00124ED9 /* Xeno_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B5650627035CFE00124ED9 /* Xeno_AppApp.swift */; };
@@ -39,20 +42,38 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A2A44D502783BF3F009B3602 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A2A44D4F2783BF3F009B3602 /* LeagueAPI.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		A2062641278479E3000F5FD5 /* Keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
 		A2502E0B271CD5A2003B545C /* ApiCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCall.swift; sourceTree = "<group>"; };
 		A2502E0D271CD5E5003B545C /* ChampionDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionDetail.swift; sourceTree = "<group>"; };
+		A25EDACD27829087005AEF24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2A3B2D32724C233005D4F4A /* ChampionNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionNavView.swift; sourceTree = "<group>"; };
+		A2A44D492783BF20009B3602 /* Xeno_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Xeno_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2A44D4A2783BF21009B3602 /* Xeno_AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Xeno_AppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2A44D4B2783BF21009B3602 /* Xeno_AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Xeno_AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2A44D4D2783BF3F009B3602 /* LeagueAPI.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = LeagueAPI.xcframework; path = Carthage/Build/LeagueAPI.xcframework; sourceTree = "<group>"; };
+		A2AD10D1277E639F00B6DDF7 /* Sharing manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sharing manager.swift"; sourceTree = "<group>"; };
 		A2AD1CFE27388E3400A43690 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		A2AD1D002738909400A43690 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
-		A2B5650327035CFE00124ED9 /* Xeno_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Xeno_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2B5650627035CFE00124ED9 /* Xeno_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Xeno_AppApp.swift; sourceTree = "<group>"; };
 		A2B5650827035CFE00124ED9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A2B5650A27035CFF00124ED9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2B5650D27035CFF00124ED9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A2B5651327035CFF00124ED9 /* Xeno_AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Xeno_AppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2B5651727035CFF00124ED9 /* Xeno_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Xeno_AppTests.swift; sourceTree = "<group>"; };
-		A2B5651D27035CFF00124ED9 /* Xeno_AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Xeno_AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2B5652127035CFF00124ED9 /* Xeno_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Xeno_AppUITests.swift; sourceTree = "<group>"; };
 		A2B5652327035CFF00124ED9 /* Xeno_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Xeno_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A2BB1F582729535900A7ABAE /* gameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameView.swift; sourceTree = "<group>"; };
@@ -63,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2A44D4E2783BF3F009B3602 /* LeagueAPI.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,29 +105,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A2A44D4C2783BF3F009B3602 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2A44D4D2783BF3F009B3602 /* LeagueAPI.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A2AD10D0277E638600B6DDF7 /* managers */ = {
+			isa = PBXGroup;
+			children = (
+				A2AD10D1277E639F00B6DDF7 /* Sharing manager.swift */,
+			);
+			path = managers;
+			sourceTree = "<group>";
+		};
 		A2B564FA27035CFE00124ED9 = {
 			isa = PBXGroup;
 			children = (
+				A2062641278479E3000F5FD5 /* Keys.plist */,
+				A25EDACD27829087005AEF24 /* Info.plist */,
 				A2B5650527035CFE00124ED9 /* Xeno_App */,
 				A2B5651627035CFF00124ED9 /* Xeno_AppTests */,
 				A2B5652027035CFF00124ED9 /* Xeno_AppUITests */,
-				A2B5650427035CFE00124ED9 /* Products */,
+				A2A44D492783BF20009B3602 /* Xeno_App.app */,
+				A2A44D4A2783BF21009B3602 /* Xeno_AppTests.xctest */,
+				A2A44D4B2783BF21009B3602 /* Xeno_AppUITests.xctest */,
+				A2A44D4C2783BF3F009B3602 /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		A2B5650427035CFE00124ED9 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A2B5650327035CFE00124ED9 /* Xeno_App.app */,
-				A2B5651327035CFF00124ED9 /* Xeno_AppTests.xctest */,
-				A2B5651D27035CFF00124ED9 /* Xeno_AppUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		A2B5650527035CFE00124ED9 /* Xeno_App */ = {
 			isa = PBXGroup;
 			children = (
+				A2AD10D0277E638600B6DDF7 /* managers */,
 				A2AD1D002738909400A43690 /* GameViewModel.swift */,
 				A2AD1CFE27388E3400A43690 /* GameModel.swift */,
 				A2A3B2D32724C233005D4F4A /* ChampionNavView.swift */,
@@ -155,6 +189,7 @@
 				A2B564FF27035CFE00124ED9 /* Sources */,
 				A2B5650027035CFE00124ED9 /* Frameworks */,
 				A2B5650127035CFE00124ED9 /* Resources */,
+				A2A44D502783BF3F009B3602 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -162,13 +197,14 @@
 			);
 			name = Xeno_App;
 			productName = Xeno_App;
-			productReference = A2B5650327035CFE00124ED9 /* Xeno_App.app */;
+			productReference = A2A44D492783BF20009B3602 /* Xeno_App.app */;
 			productType = "com.apple.product-type.application";
 		};
 		A2B5651227035CFF00124ED9 /* Xeno_AppTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A2B5652A27035CFF00124ED9 /* Build configuration list for PBXNativeTarget "Xeno_AppTests" */;
 			buildPhases = (
+				5CD8D20F03158D9542240384 /* [CP] Check Pods Manifest.lock */,
 				A2B5650F27035CFF00124ED9 /* Sources */,
 				A2B5651027035CFF00124ED9 /* Frameworks */,
 				A2B5651127035CFF00124ED9 /* Resources */,
@@ -180,13 +216,14 @@
 			);
 			name = Xeno_AppTests;
 			productName = Xeno_AppTests;
-			productReference = A2B5651327035CFF00124ED9 /* Xeno_AppTests.xctest */;
+			productReference = A2A44D4A2783BF21009B3602 /* Xeno_AppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		A2B5651C27035CFF00124ED9 /* Xeno_AppUITests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A2B5652D27035CFF00124ED9 /* Build configuration list for PBXNativeTarget "Xeno_AppUITests" */;
 			buildPhases = (
+				BFEABD09C0E0A7551EDE5BB9 /* [CP] Check Pods Manifest.lock */,
 				A2B5651927035CFF00124ED9 /* Sources */,
 				A2B5651A27035CFF00124ED9 /* Frameworks */,
 				A2B5651B27035CFF00124ED9 /* Resources */,
@@ -198,7 +235,7 @@
 			);
 			name = Xeno_AppUITests;
 			productName = Xeno_AppUITests;
-			productReference = A2B5651D27035CFF00124ED9 /* Xeno_AppUITests.xctest */;
+			productReference = A2A44D4B2783BF21009B3602 /* Xeno_AppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -233,7 +270,7 @@
 				Base,
 			);
 			mainGroup = A2B564FA27035CFE00124ED9;
-			productRefGroup = A2B5650427035CFE00124ED9 /* Products */;
+			productRefGroup = A2B564FA27035CFE00124ED9;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -270,6 +307,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5CD8D20F03158D9542240384 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Xeno_AppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFEABD09C0E0A7551EDE5BB9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Xeno_App-Xeno_AppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A2B564FF27035CFE00124ED9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -282,6 +366,7 @@
 				A2AD1D012738909400A43690 /* GameViewModel.swift in Sources */,
 				A2502E0C271CD5A2003B545C /* ApiCall.swift in Sources */,
 				A2AD1CFF27388E3400A43690 /* GameModel.swift in Sources */,
+				A2AD10D2277E639F00B6DDF7 /* Sharing manager.swift in Sources */,
 				A2B5650727035CFE00124ED9 /* Xeno_AppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,6 +455,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				"INFOPLIST_FILE[sdk=*]" = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -425,6 +511,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				"INFOPLIST_FILE[sdk=*]" = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -445,7 +532,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Xeno_App/Preview Content\"";
 				DEVELOPMENT_TEAM = 8G93859436;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				FRAMEWORK_SEARCH_PATHS = /Users/xenomannens/Documents/IOSapp/IOSApp/Xeno_App/Carthage/Build;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = /Users/xenomannens/Documents/IOSapp/IOSApp/Xeno_App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -475,7 +564,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Xeno_App/Preview Content\"";
 				DEVELOPMENT_TEAM = 8G93859436;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				FRAMEWORK_SEARCH_PATHS = /Users/xenomannens/Documents/IOSapp/IOSApp/Xeno_App/Carthage/Build;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = /Users/xenomannens/Documents/IOSapp/IOSApp/Xeno_App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

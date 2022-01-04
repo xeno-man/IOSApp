@@ -18,29 +18,37 @@ struct GameModel{
     var score :Int = 0
     var GameHasStarted = false
     
-    init(){
-       AllChamps = [Champion]()
-        AllChamps.append(Champion(id: 0, name: "Azir", price: 2))
-        AllChamps.append(Champion(id: 1, name: "Lulu", price: 2))
-       AllChamps.append(Champion(id: 2, name: "Ahri", price: 2))
-        StartGame()
+    init() {
+        //AllChamps = try! await Api().GetChamps()
+        
+         AllChamps = [Champion]()
+        /*AllChamps.append(Champion(id: 0, name: "Azir" )
+        AllChamps.append(Champion(id: 1, name: "Lulu"))
+       AllChamps.append(Champion(id: 2, name: "Ahri"))
+        AllChamps.append(Champion(id: 2, name: "Tristana"))
+        AllChamps.append(Champion(id: 2, name: "Alistar"))
+        AllChamps.append(Champion(id: 2, name: "Zed"))
+        AllChamps.append(Champion(id: 2, name: "Viktor"))
+        AllChamps.append(Champion(id: 2, name: "Jinx"))*/
+        AllChamps = Api().GetAllChamps()
+        
+        
+        
         
         score = 0
             
         }
     
-    mutating func  StartGame()-> Void{
-      
-       
+    mutating func  StartGame() -> Void{
             score = 0
-            AllChamps.shuffle()
+          AllChamps.shuffle()
+        TimesGuessed = 0
             GameHasStarted = true
             hasEnded = false
-        
-        
-        
 
     }
+    
+    
     
     
     mutating func guess(name : String ,  index: Int){
@@ -50,7 +58,7 @@ struct GameModel{
             score = score + 1
         }
         TimesGuessed += 1
-        if( TimesGuessed == AllChamps.count){
+        if( TimesGuessed == 5){
             hasEnded = true
             GameHasStarted = false
         }
@@ -66,7 +74,16 @@ struct Champion : Decodable , Identifiable{
     let Id = UUID()
     var id : Int
     var name : String
-    var price : Int
+    
+    
+    var artworkImageString: String {
+            return "https://ddragon.leagueoflegends.com/cdn/6.24.1/img/champion/\(name).png"
+        }
+        
+        var splashImageString: String {
+            return "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/\(name)_0.jpg"
+        }
+   
     
     
     

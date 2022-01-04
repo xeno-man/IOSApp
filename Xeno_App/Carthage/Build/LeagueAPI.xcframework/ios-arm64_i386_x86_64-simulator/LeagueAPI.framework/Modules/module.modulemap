@@ -1,0 +1,11 @@
+framework module LeagueAPI {
+  umbrella header "LeagueAPI.h"
+
+  export *
+  module * { export * }
+}
+
+module LeagueAPI.Swift {
+    header "LeagueAPI-Swift.h"
+    requires objc
+}

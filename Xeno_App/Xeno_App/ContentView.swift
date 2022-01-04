@@ -40,7 +40,7 @@ struct ContentView: View {
                         .cornerRadius(50)
                 }.padding()*/
                 
-                    NavigationLink(destination: {gameView(game: .init())} ){
+                    NavigationLink(destination: {gameView(game : .init())} ){
                     Text("Play the game")
                                 .padding()
                                 .foregroundColor(.black)
@@ -54,6 +54,7 @@ struct ContentView: View {
                         
                     }.navigationTitle("League Guesser")
                         .navigationViewStyle(.automatic)
+                        
                                                                        
                 }
                 }

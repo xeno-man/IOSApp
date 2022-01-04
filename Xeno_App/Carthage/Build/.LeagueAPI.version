@@ -1,0 +1,19 @@
+{
+  "commitish" : "4.3.0",
+  "iOS" : [
+    {
+      "swiftToolchainVersion" : "5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)",
+      "hash" : "f3d3dc4dcfcae74783d67ac4c8e2f244c72bcc462be69f7facdf58a4ddb5ee75",
+      "name" : "LeagueAPI",
+      "container" : "LeagueAPI.xcframework",
+      "identifier" : "ios-arm64_i386_x86_64-simulator"
+    },
+    {
+      "swiftToolchainVersion" : "5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)",
+      "hash" : "7be4a7953129eed3148b0f8edf31dc1ccf26fde1dfeabd72f4d816a91dd7f950",
+      "name" : "LeagueAPI",
+      "container" : "LeagueAPI.xcframework",
+      "identifier" : "ios-arm64_armv7"
+    }
+  ]
+}

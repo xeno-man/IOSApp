@@ -18,7 +18,10 @@ namespace IOSAPI.Data
 
             builder.Entity<Champion>().HasData(
                 new Champion { Id = 1,Name ="Aatrox" , Price=Price1},
-                new Champion { Id = 2, Name= "Ahri", Price = Price1}
+                new Champion { Id = 2, Name= "Ahri", Price = Price1},
+                new Champion { Id = 3,Name = "Lulu" , Price=Price1},
+                new Champion { Id = 4, Name= "Vi",Price=Price1},
+                new Champion { Id = 5, Name= "Pyke",Price=Price1}
                 );
 
             

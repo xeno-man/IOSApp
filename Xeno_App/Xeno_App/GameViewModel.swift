@@ -11,12 +11,12 @@ class GameViewModel : ObservableObject{
     @Published var model : GameModel
    
     
-    init(){
-        model = GameModel()
+    init() {
+        model =  GameModel()
        
     }
-    public  func StartGame(){
-        model.StartGame()
+    public  func StartGame() async {
+        await model.StartGame()
     }
     
     public func Guess(guessedName : String, index : Int){

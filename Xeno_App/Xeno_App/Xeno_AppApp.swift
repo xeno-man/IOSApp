@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct Xeno_AppApp: App {
-    let model = GameViewModel()
+    let model =  GameViewModel()
  
     var body: some Scene {
        
