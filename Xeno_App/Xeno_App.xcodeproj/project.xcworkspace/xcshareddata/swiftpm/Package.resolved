@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SwiftUITooltip",
+        "repositoryURL": "https://github.com/quassummanus/SwiftUI-Tooltip.git",
+        "state": {
+          "branch": null,
+          "revision": "01dae0053a27ee26331677a12c3d7388114aafcd",
+          "version": "1.1.2"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

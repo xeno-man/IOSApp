@@ -31,14 +31,14 @@ struct ContentView: View {
                     }
                 VStack{
                     Text("Welcome to my game").font(.title)
-                    /*NavigationLink(destination: ChampionNavView(champs: Game.model.AllChamps) ){
+                    NavigationLink(destination: ChampionNavView() ){
                     Text("Check out all the Champions")
                         .padding()
                         .foregroundColor(.black)
                         .font(.title)
                         .background(Color.red)
                         .cornerRadius(50)
-                }.padding()*/
+                }.padding()
                 
                     NavigationLink(destination: {gameView(game : .init())} ){
                     Text("Play the game")
@@ -53,11 +53,12 @@ struct ContentView: View {
                       
                         
                     }.navigationTitle("League Guesser")
-                        .navigationViewStyle(.automatic)
+                        .font(.title2)
+                       
                         
                                                                        
                 }
-                }
+                } .navigationBarTitleDisplayMode(.inline)
                 }
             }
         

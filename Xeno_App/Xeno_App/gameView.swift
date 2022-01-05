@@ -12,7 +12,8 @@ struct gameView: View {
   
     @State var counter = 0
     @State private var guess : String = ""
-    @State var loading : Bool = false
+    @State public var QuestionNr = 0
+    
     
     
    
@@ -56,11 +57,13 @@ struct gameView: View {
                             game.Guess(guessedName: guess, index: counter)
                             print(game.model.score)
                             nextChamp()
+                            QuestionNr += 1
                             guess = ""
                         }
                         //Spacer()
                         Button("Skip"){
                             game.Guess(guessedName: "", index: counter)
+                            QuestionNr += 1
                             print(game.model.score)
                             nextChamp()
                             guess = ""
@@ -86,7 +89,7 @@ struct gameView: View {
                             .aspectRatio(contentMode: .fill)
                             .padding()
                             .onAppear{
-                                loading = true
+                               
                             }
                     } else if phase.error != nil {
                         Text("").onAppear{
@@ -97,7 +100,7 @@ struct gameView: View {
                         
                         VStack{
                             ProgressView().progressViewStyle(.circular).onAppear{
-                                loading = true
+                                
                             }
                             Text("wait a second while we load the picture")
                         }
@@ -109,7 +112,8 @@ struct gameView: View {
             } else {
                 // Fallback on earlier versions
                 // Fallback on earlier versions
-                Image(game.model.AllChamps[counter].artworkImageString)
+                ImageViewPre15(withURL: game.model.AllChamps[counter].artworkImageString)
+                
             }
         }
         

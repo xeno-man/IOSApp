@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A206264327848EC5000F5FD5 /* ChampionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A206264227848EC5000F5FD5 /* ChampionViewModel.swift */; };
+		A2062645278490B6000F5FD5 /* models.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2062644278490B6000F5FD5 /* models.swift */; };
+		A20626482784A03B000F5FD5 /* SwiftUITooltip in Frameworks */ = {isa = PBXBuildFile; productRef = A20626472784A03B000F5FD5 /* SwiftUITooltip */; };
+		A206264B2785C514000F5FD5 /* ImageLoaderPre15.swift in Sources */ = {isa = PBXBuildFile; fileRef = A206264A2785C514000F5FD5 /* ImageLoaderPre15.swift */; };
+		A206264D2785C54B000F5FD5 /* ImagePre15.swift in Sources */ = {isa = PBXBuildFile; fileRef = A206264C2785C54B000F5FD5 /* ImagePre15.swift */; };
 		A2502E0C271CD5A2003B545C /* ApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2502E0B271CD5A2003B545C /* ApiCall.swift */; };
 		A2502E0E271CD5E5003B545C /* ChampionDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2502E0D271CD5E5003B545C /* ChampionDetail.swift */; };
 		A2A3B2D42724C233005D4F4A /* ChampionNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A3B2D32724C233005D4F4A /* ChampionNavView.swift */; };
 		A2A44D4E2783BF3F009B3602 /* LeagueAPI.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A44D4D2783BF3F009B3602 /* LeagueAPI.xcframework */; };
 		A2A44D4F2783BF3F009B3602 /* LeagueAPI.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A2A44D4D2783BF3F009B3602 /* LeagueAPI.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A2AD10D2277E639F00B6DDF7 /* Sharing manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AD10D1277E639F00B6DDF7 /* Sharing manager.swift */; };
 		A2AD1CFF27388E3400A43690 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AD1CFE27388E3400A43690 /* GameModel.swift */; };
 		A2AD1D012738909400A43690 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AD1D002738909400A43690 /* GameViewModel.swift */; };
 		A2B5650727035CFE00124ED9 /* Xeno_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B5650627035CFE00124ED9 /* Xeno_AppApp.swift */; };
@@ -58,6 +62,10 @@
 
 /* Begin PBXFileReference section */
 		A2062641278479E3000F5FD5 /* Keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
+		A206264227848EC5000F5FD5 /* ChampionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionViewModel.swift; sourceTree = "<group>"; };
+		A2062644278490B6000F5FD5 /* models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = models.swift; sourceTree = "<group>"; };
+		A206264A2785C514000F5FD5 /* ImageLoaderPre15.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderPre15.swift; sourceTree = "<group>"; };
+		A206264C2785C54B000F5FD5 /* ImagePre15.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePre15.swift; sourceTree = "<group>"; };
 		A2502E0B271CD5A2003B545C /* ApiCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCall.swift; sourceTree = "<group>"; };
 		A2502E0D271CD5E5003B545C /* ChampionDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionDetail.swift; sourceTree = "<group>"; };
 		A25EDACD27829087005AEF24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -66,7 +74,6 @@
 		A2A44D4A2783BF21009B3602 /* Xeno_AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Xeno_AppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2A44D4B2783BF21009B3602 /* Xeno_AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Xeno_AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2A44D4D2783BF3F009B3602 /* LeagueAPI.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = LeagueAPI.xcframework; path = Carthage/Build/LeagueAPI.xcframework; sourceTree = "<group>"; };
-		A2AD10D1277E639F00B6DDF7 /* Sharing manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sharing manager.swift"; sourceTree = "<group>"; };
 		A2AD1CFE27388E3400A43690 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		A2AD1D002738909400A43690 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		A2B5650627035CFE00124ED9 /* Xeno_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Xeno_AppApp.swift; sourceTree = "<group>"; };
@@ -84,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A20626482784A03B000F5FD5 /* SwiftUITooltip in Frameworks */,
 				A2A44D4E2783BF3F009B3602 /* LeagueAPI.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,20 +113,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A20626492785C501000F5FD5 /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				A206264A2785C514000F5FD5 /* ImageLoaderPre15.swift */,
+			);
+			path = helper;
+			sourceTree = "<group>";
+		};
 		A2A44D4C2783BF3F009B3602 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				A2A44D4D2783BF3F009B3602 /* LeagueAPI.xcframework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		A2AD10D0277E638600B6DDF7 /* managers */ = {
-			isa = PBXGroup;
-			children = (
-				A2AD10D1277E639F00B6DDF7 /* Sharing manager.swift */,
-			);
-			path = managers;
 			sourceTree = "<group>";
 		};
 		A2B564FA27035CFE00124ED9 = {
@@ -139,7 +147,9 @@
 		A2B5650527035CFE00124ED9 /* Xeno_App */ = {
 			isa = PBXGroup;
 			children = (
-				A2AD10D0277E638600B6DDF7 /* managers */,
+				A20626492785C501000F5FD5 /* helper */,
+				A2062644278490B6000F5FD5 /* models.swift */,
+				A206264227848EC5000F5FD5 /* ChampionViewModel.swift */,
 				A2AD1D002738909400A43690 /* GameViewModel.swift */,
 				A2AD1CFE27388E3400A43690 /* GameModel.swift */,
 				A2A3B2D32724C233005D4F4A /* ChampionNavView.swift */,
@@ -150,6 +160,7 @@
 				A2502E0B271CD5A2003B545C /* ApiCall.swift */,
 				A2B5650A27035CFF00124ED9 /* Assets.xcassets */,
 				A2B5650C27035CFF00124ED9 /* Preview Content */,
+				A206264C2785C54B000F5FD5 /* ImagePre15.swift */,
 			);
 			path = Xeno_App;
 			sourceTree = "<group>";
@@ -196,6 +207,9 @@
 			dependencies = (
 			);
 			name = Xeno_App;
+			packageProductDependencies = (
+				A20626472784A03B000F5FD5 /* SwiftUITooltip */,
+			);
 			productName = Xeno_App;
 			productReference = A2A44D492783BF20009B3602 /* Xeno_App.app */;
 			productType = "com.apple.product-type.application";
@@ -270,6 +284,9 @@
 				Base,
 			);
 			mainGroup = A2B564FA27035CFE00124ED9;
+			packageReferences = (
+				A20626462784A03B000F5FD5 /* XCRemoteSwiftPackageReference "SwiftUI-Tooltip" */,
+			);
 			productRefGroup = A2B564FA27035CFE00124ED9;
 			projectDirPath = "";
 			projectRoot = "";
@@ -360,14 +377,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2BB1F592729535900A7ABAE /* gameView.swift in Sources */,
+				A206264327848EC5000F5FD5 /* ChampionViewModel.swift in Sources */,
+				A206264B2785C514000F5FD5 /* ImageLoaderPre15.swift in Sources */,
+				A206264D2785C54B000F5FD5 /* ImagePre15.swift in Sources */,
 				A2B5650927035CFE00124ED9 /* ContentView.swift in Sources */,
 				A2A3B2D42724C233005D4F4A /* ChampionNavView.swift in Sources */,
 				A2502E0E271CD5E5003B545C /* ChampionDetail.swift in Sources */,
 				A2AD1D012738909400A43690 /* GameViewModel.swift in Sources */,
 				A2502E0C271CD5A2003B545C /* ApiCall.swift in Sources */,
 				A2AD1CFF27388E3400A43690 /* GameModel.swift in Sources */,
-				A2AD10D2277E639F00B6DDF7 /* Sharing manager.swift in Sources */,
 				A2B5650727035CFE00124ED9 /* Xeno_AppApp.swift in Sources */,
+				A2062645278490B6000F5FD5 /* models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -722,6 +742,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A20626462784A03B000F5FD5 /* XCRemoteSwiftPackageReference "SwiftUI-Tooltip" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/quassummanus/SwiftUI-Tooltip.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A20626472784A03B000F5FD5 /* SwiftUITooltip */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A20626462784A03B000F5FD5 /* XCRemoteSwiftPackageReference "SwiftUI-Tooltip" */;
+			productName = SwiftUITooltip;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A2B564FB27035CFE00124ED9 /* Project object */;
 }

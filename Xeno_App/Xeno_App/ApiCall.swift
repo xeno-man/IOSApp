@@ -30,6 +30,7 @@ class Api :  ObservableObject {
         var ApiKey  = ""
         
        
+        // code gevonden op stackoverflow
         if let path = Bundle.main.path(forResource: "Keys", ofType: "plist") {
                 keys = NSDictionary(contentsOfFile: path)
         }
@@ -62,6 +63,32 @@ class Api :  ObservableObject {
             
         }
         return champs
+    }
+    
+    public func getChampionByName(name : String) -> ChampiondetailModel{
+        let lol = LeagueAPI(APIToken: GetApiKey())
+        var champ : ChampiondetailModel = ChampiondetailModel(id: 0, name: "", title: "", spells: [Spell](), image: "", nrOfSkins: 0)
+        lol.lolAPI.getChampionDetails(byName: name){ (champion, errorMsg) in
+            if let champion = champion {
+                    print("Success!")
+               
+             
+                var spells = [Spell]()
+                var counter = 0
+                champion.spells.forEach{ spell in
+                    spells.append(Spell(id:counter,name: spell.name, image: spell.image.url, description: spell.description))
+                    counter += 1
+                }
+                 counter = 0
+                 champ = ChampiondetailModel(id: champion.championId.hashValue, name: champion.name, title: champion.title, spells: spells, image: champion.skins.first?.skinImages.square.url ?? "empty", nrOfSkins: champion.skins.count)
+                print(champ)
+                
+                }
+                else {
+                    print("Request failed cause: \(errorMsg ?? "No error description")")
+                }
+        }
+        return champ
     }
     
     
