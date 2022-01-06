@@ -22,6 +22,7 @@ struct gameView: View {
         counter = counter + 1
          print("counter = \(counter)")
         
+        
     }
 
     var body: some View {
@@ -29,10 +30,10 @@ struct gameView: View {
             ProgressView()
         }else{
             if !game.model.hasEnded{
-                GuessView
+                GuessView.transition(.slide)
                 
             }else{
-                ScoreView
+                ScoreView.transition(.slide)
                     
             }
         }
@@ -54,19 +55,25 @@ struct gameView: View {
                     .border(.black)
                     HStack{
                         Button("Guess"){
-                            game.Guess(guessedName: guess, index: counter)
-                            print(game.model.score)
-                            nextChamp()
-                            QuestionNr += 1
-                            guess = ""
+                            withAnimation(.easeInOut){
+                                game.Guess(guessedName: guess, index: counter)
+                                print(game.model.score)
+                                nextChamp()
+                                QuestionNr += 1
+                                guess = ""
+                            }
+                            
                         }
                         //Spacer()
                         Button("Skip"){
-                            game.Guess(guessedName: "", index: counter)
-                            QuestionNr += 1
-                            print(game.model.score)
-                            nextChamp()
-                            guess = ""
+                            withAnimation(.easeInOut){
+                                game.Guess(guessedName: "", index: counter)
+                                print(game.model.score)
+                                nextChamp()
+                                QuestionNr += 1
+                                guess = ""
+                            }
+                            
                         }
                     }.padding()
                     

@@ -9,27 +9,21 @@ import SwiftUI
 import SwiftUITooltip
 
 struct ChampionDetail: View {
-    var tooltipConfig = DefaultTooltipConfig()
     var champ : ChampiondetailModel
  
     
-    init(champ : ChampiondetailModel){
-        self.champ = champ;
-        self.tooltipConfig.enableAnimation = true
-        
-    }
+    
     
     var body: some View {
         
             VStack{
-                Text(champ.name)
-                Text(champ.title)
+                Text(champ.name).font(.title)
+                Text(champ.title).font(.subheadline)
                 CarouselView(Champ: champ)
-                Spacer()
-                spellView
+                spellView.padding(.bottom)
                
-            }
-                .frame(width: .infinity, height: .infinity)
+            }.padding()
+                
         
         
     }
@@ -53,8 +47,7 @@ struct ChampionDetail: View {
                     } else {
                         
                         VStack{
-                            ProgressView().progressViewStyle(.circular)
-                            Text("wait a second while we load the picture")
+                            Rectangle()
                         }
                         // Acts as a placeholder.
                     }
@@ -127,14 +120,28 @@ struct ChampionDetail: View {
 struct CarouselView : View{
     @State private var index = 0
     public var Champ : ChampiondetailModel
+   
     var body: some View{
         VStack{
             TabView(selection: $index) {
                 ForEach((0..<Champ.amountOfSkins), id: \.self) { index in
-                    ImageView(url: Champ.getSkin(counter: index),width: 100,height: 100).frame(width: 150, height: 150)
+                    ImageView(url: Champ.getSkin(counter: index),width: 400,height: 400)
                             }
+            }.tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
+            HStack(spacing: 2) {
+                ForEach((0..<Champ.amountOfSkins), id: \.self) { index in
+                    Circle()
+                        .fill(index == self.index ? Color.purple : Color.purple.opacity(0.5))
+                        .frame(width: 20, height: 20)
+                        .onTapGesture {
+                            self.index = index
                         }
-                        .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
+
+                }
+            }
+            
+                        
+                        
         }
     }
 }

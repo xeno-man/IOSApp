@@ -58,7 +58,7 @@ struct ContentView: View {
                         
                                                                        
                 }
-                } .navigationBarTitleDisplayMode(.inline)
+                }
                 }
             }
         

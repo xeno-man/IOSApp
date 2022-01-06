@@ -6,6 +6,7 @@
 //
 import SwiftUI
 // van stackoverflow
+// https://stackoverflow.com/questions/60677622/how-to-display-image-from-a-url-in-swiftui
 struct ImageViewPre15: View {
     @ObservedObject var imageLoader:ImageLoader
     @State var image:UIImage = UIImage()

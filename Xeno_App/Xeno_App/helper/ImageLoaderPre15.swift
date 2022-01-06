@@ -9,6 +9,7 @@ import Foundation
 import Combine
 import SwiftUI
 // van stack overflow
+// https://stackoverflow.com/questions/60677622/how-to-display-image-from-a-url-in-swiftui
 class ImageLoader: ObservableObject {
     var didChange = PassthroughSubject<Data, Never>()
     var data = Data() {
