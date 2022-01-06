@@ -134,8 +134,11 @@ struct CarouselView : View{
                         .fill(index == self.index ? Color.purple : Color.purple.opacity(0.5))
                         .frame(width: 20, height: 20)
                         .onTapGesture {
+                            withAnimation(.easeInOut(duration: 1)){
                             self.index = index
+                            }
                         }
+                        
 
                 }
             }
