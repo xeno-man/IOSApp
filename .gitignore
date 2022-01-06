@@ -10,6 +10,10 @@
 *.userosscache
 *.sln.docstates
 
+###OWN Added
+
+*.plist
+
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
@@ -443,6 +447,8 @@ $RECYCLE.BIN/
 # JetBrains Rider
 .idea/
 *.sln.iml
+
+
 
 ##
 ## Visual Studio Code
