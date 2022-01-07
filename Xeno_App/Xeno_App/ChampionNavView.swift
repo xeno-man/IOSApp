@@ -14,13 +14,14 @@ struct ChampionNavView: View {
     
     var body: some View {
        
-            NavigationView{
+            
                 ScrollView{
                     ZStack{
-                        VStack(alignment: .leading, spacing: 5){
+                        
+                        LazyVStack(alignment: .leading, spacing: 5){
                         ForEach(champlist.champs){ champion in
                                 NavigationLink(destination: { ChampionDetail(champ: champlist.getChampionDetail(name: champion.name))} ){
-                                    NavCell(champ: champion)
+                                    NavCell(champ: champion).padding(.horizontal)
                                     
                                     
                                 
@@ -32,7 +33,7 @@ struct ChampionNavView: View {
                 }
                 }
                
-            }
+         
         
     }
     

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @ObservedObject var Game : GameViewModel
+    @State var champModel : ChampionViewModel = ChampionViewModel()
   
     
     
@@ -18,7 +19,6 @@ struct ContentView: View {
     }
     	
     var body: some View {
-       
         
             
             NavigationView{
@@ -31,7 +31,10 @@ struct ContentView: View {
                     }
                 VStack{
                     Text("Welcome to my game").font(.title)
-                    NavigationLink(destination: ChampionNavView() ){
+                    NavigationLink(destination: {
+                        ChampionNavView()
+                    } ){
+                        
                     Text("Check out all the Champions")
                         .padding()
                         .foregroundColor(.black)
@@ -58,7 +61,7 @@ struct ContentView: View {
                         
                                                                        
                 }
-                }
+            }.navigationViewStyle(.stack)
                 }
             }
         

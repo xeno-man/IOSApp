@@ -117,6 +117,7 @@ struct ChampionDetail: View {
                 
 }
 
+// code komt deels van 
 struct CarouselView : View{
     @State private var index = 0
     public var Champ : ChampiondetailModel
@@ -131,7 +132,7 @@ struct CarouselView : View{
             HStack(spacing: 2) {
                 ForEach((0..<Champ.amountOfSkins), id: \.self) { index in
                     Circle()
-                        .fill(index == self.index ? Color.purple : Color.purple.opacity(0.5))
+                        .fill(index == self.index ? Color.gray : Color.gray.opacity(0.5))
                         .frame(width: 20, height: 20)
                         .onTapGesture {
                             withAnimation(.easeInOut(duration: 1)){

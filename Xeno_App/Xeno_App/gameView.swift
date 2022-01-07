@@ -47,35 +47,15 @@ struct gameView: View {
                 
                 Text("\(counter)/5").font(.title)
                 Spacer()
-                ImageView
+                ImageView.padding()
                 Spacer()
                 TextField("guess the champion name",text: $guess)
                     .padding()
                     .frame(width: 300, height: 50)
                     .border(.black)
-                    HStack{
-                        Button("Guess"){
-                            withAnimation(.easeInOut){
-                                game.Guess(guessedName: guess, index: counter)
-                                print(game.model.score)
-                                nextChamp()
-                                QuestionNr += 1
-                                guess = ""
-                            }
-                            
-                        }
-                        //Spacer()
-                        Button("Skip"){
-                            withAnimation(.easeInOut){
-                                game.Guess(guessedName: "", index: counter)
-                                print(game.model.score)
-                                nextChamp()
-                                QuestionNr += 1
-                                guess = ""
-                            }
-                            
-                        }
-                    }.padding()
+                    
+                    
+                gameButtons
                     
                 
                 
@@ -84,7 +64,46 @@ struct gameView: View {
        
     }
     
-
+    var gameButtons : some View{
+        HStack{
+            Button
+            {
+                withAnimation(.easeInOut){
+                    game.Guess(guessedName: guess, index: counter)
+                    print(game.model.score)
+                    nextChamp()
+                    QuestionNr += 1
+                    guess = ""
+                }
+            }
+            label:{
+                Text("Guess")
+                
+            }.padding()
+            
+           
+                
+            
+            //Spacer()
+            Button{
+                withAnimation(.easeInOut){
+                    game.Guess(guessedName: "", index: counter)
+                    print(game.model.score)
+                    nextChamp()
+                    QuestionNr += 1
+                    guess = ""
+                }
+                
+            }
+                label:{
+        
+                    Text("skip")
+                }.padding()
+        }.padding()
+         
+    }
+    
+    
     var ImageView : some View{
         HStack{
             if #available(iOS 15.0, *) {

@@ -7,7 +7,7 @@
 
 import Foundation
 class ChampionViewModel : ObservableObject{
-    var champs : [Champion]
+    @Published var champs : [Champion]
     
     init(){
         champs = Api().GetAllChamps()
