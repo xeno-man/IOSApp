@@ -50,6 +50,7 @@ struct gameView: View {
                 ImageView.padding()
                 Spacer()
                 TextField("guess the champion name",text: $guess)
+                    .disableAutocorrection(true)
                     .padding()
                     .frame(width: 300, height: 50)
                     .border(.black)
