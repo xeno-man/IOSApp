@@ -65,7 +65,7 @@ class Api :  ObservableObject {
         return champs
     }
     
-    public func getChampionByName(name : String) -> ChampiondetailModel{
+    public func getChampionByName(name : String)  -> ChampiondetailModel {
         let lol = LeagueAPI(APIToken: GetApiKey())
         var champ : ChampiondetailModel = ChampiondetailModel(id: 0, name: "", title: "", spells: [Spell](), image: "", nrOfSkins: 0)
         lol.lolAPI.getChampionDetails(byName: name){ (champion, errorMsg) in

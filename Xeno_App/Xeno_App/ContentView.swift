@@ -8,15 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @ObservedObject var Game : GameViewModel
-    @State var champModel : ChampionViewModel = ChampionViewModel()
-  
-    
-    
-    
-    init(model : GameViewModel) {
-        self.Game = model
-    }
+   
     	
     var body: some View {
         
@@ -77,7 +69,7 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         
         
-        return ContentView(model: GameViewModel())
+        return ContentView()
         
     }
 }

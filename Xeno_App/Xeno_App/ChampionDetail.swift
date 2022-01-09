@@ -9,7 +9,12 @@ import SwiftUI
 import SwiftUITooltip
 
 struct ChampionDetail: View {
-    var champ : ChampiondetailModel
+
+    
+    @State var champ : ChampiondetailModel
+    var name :String 
+    
+    
  
     
     
@@ -17,12 +22,21 @@ struct ChampionDetail: View {
     var body: some View {
         
             VStack{
-                Text(champ.name).font(.title)
+                Text(name).font(.title)
                 Text(champ.title).font(.subheadline)
                 CarouselView(Champ: champ)
                 spellView.padding(.bottom)
                
-            }.padding()
+            }
+            .onAppear{
+                if champ.name != name  {
+                    champ = ChampionViewModel().getChampionDetail(name: name)
+                    
+                    
+                }
+                    
+            }
+            .padding()
                 
         
         

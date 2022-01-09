@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct ChampionNavView: View {
-    @ObservedObject var champlist : ChampionViewModel = ChampionViewModel()
+    @ObservedObject var champlist : ChampionViewModel  = ChampionViewModel()
     
+      
+   
     
     
     var body: some View {
@@ -20,7 +22,7 @@ struct ChampionNavView: View {
                         
                         LazyVStack(alignment: .leading, spacing: 5){
                         ForEach(champlist.champs){ champion in
-                                NavigationLink(destination: { ChampionDetail(champ: champlist.getChampionDetail(name: champion.name))} ){
+                            NavigationLink(destination: NavigationLazyView( ChampionDetail( champ: champlist.getChampionDetail(name: champion.name),name: champion.name))){
                                     NavCell(champ: champion).padding(.horizontal)
                                     
                                     

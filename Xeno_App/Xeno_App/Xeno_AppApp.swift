@@ -14,7 +14,7 @@ struct Xeno_AppApp: App {
     var body: some Scene {
        
         WindowGroup {
-            ContentView(model:model )
+            ContentView()
         }
     }
 }

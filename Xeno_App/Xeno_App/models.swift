@@ -40,6 +40,8 @@ struct ChampiondetailModel : Identifiable{
     private(set) var amountOfSkins : Int
     public var skinCounter : Int = 0
     
+    
+    
     init(id : Int,name : String, title : String, spells: [Spell],image : String,nrOfSkins:Int){
         self.id = id;
         self.name = name;
